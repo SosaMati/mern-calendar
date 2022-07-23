@@ -23,7 +23,7 @@ app.use('/api/auth', require('./routes/auth')); //ruta de autenticacion de usuar
 app.use('/api/events', require('./routes/events')); //ruta de eventos
 
 //Escuchar peticiones
-const port = process.env.PORT || 4000;
+const port = process.env.PORT;
 app.listen( port, () => {
     console.log(`Server on port ${ port }`);
 }
