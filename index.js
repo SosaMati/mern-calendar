@@ -24,7 +24,7 @@ app.use('/api/events', require('./routes/events')); //ruta de eventos
 
 
 app.get('*', (req, res) => { 
-    res.sendFile(__dirname, '/public/index.html');  //envia el archivo index.html
+    res.sendFile(__dirname + '/public/index.html');  //envia el archivo index.html
 })
 
 //Escuchar peticiones
