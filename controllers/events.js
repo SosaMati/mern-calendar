@@ -20,7 +20,7 @@ const crearEvento = async (req, res) => {
         const eventoGuardado =  await evento.save(); // Guarda el evento en la base de datos 
         res.json({ 
             ok: true,
-            msg: eventoGuardado
+            evento: eventoGuardado
         });
         
     } catch (error) {
